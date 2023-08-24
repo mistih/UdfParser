@@ -78,4 +78,4 @@ class UDFParser:
             else:
                 return "No content found"
         except Exception as e:
-            raise Exception("UDF content not found")
+            raise FileNotFoundError("UDF content not found")
